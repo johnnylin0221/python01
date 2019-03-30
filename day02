@@ -1,0 +1,33 @@
+#11_absolute.py
+
+n= int(input("請輸入一個數: "))
+#1 用if計算絕對值
+# 方法1
+if n <0 :
+	absolute = -n
+else :
+	absolute = n
+print("if計算絕對值是:",absolute)
+#方法2
+absolute = n
+if absolute <0:
+	absolute = -absolute
+print("if計算絕對值是:",absolute)
+#2 用條件式計算絕對值
+absolute = -n if n <0 else n
+print("條件式計算絕對值是:",absolute)
+
+#12_pass.py
+
+#此程序示意pass語句用法
+
+#判斷學生成績是否不合法,如果不合法給出警告訊息,
+#如果合法什麽都不做
+
+score = int(input("請輸入成績: "))
+
+if 0 <= score <= 100:
+	pass #此語句就是為了填充空白語句
+else:
+	print("您的輸入有誤!")
+print("程序結束")
